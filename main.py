@@ -21,5 +21,7 @@ model.fit(X_train_scaled, y_train)
 from sklearn.metrics import accuracy_score
 y_pred = model.predict(X_test_scaled)
 accuracy = accuracy_score(y_test, y_pred)
-
 print(accuracy)
+import joblib
+
+joblib.dump(model, "my_model.joblib")
