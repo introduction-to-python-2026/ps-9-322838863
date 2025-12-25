@@ -22,4 +22,4 @@ from sklearn.metrics import accuracy_score
 y_pred = model.predict(X_test_scaled)
 accuracy = accuracy_score(y_test, y_pred)
 
-print(accuracy
+print(accuracy)
